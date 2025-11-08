@@ -1,183 +1,103 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solef1t - Personal Blog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solef1t - Personal Blog</title>
+
+  <!-- SEO & Social -->
+  <meta name="description" content="Blog & portfolio cá nhân của duynhat326 — ghi chép CTF, writeups và labs bảo mật." />
+  <link rel="canonical" href="https://solef1t.dev/" />
+  <meta property="og:title" content="Solef1t - Personal Blog" />
+  <meta property="og:description" content="CTF • Writeups • Labs • Rewards • Contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://solef1t.dev/" />
+  <meta property="og:image" content="/assets/img/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Favicon / Fonts / CSS -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-    <div class="background"></div>
-    <div class="window">
-        <header class="window__bar" role="presentation">
-            <div class="traffic-lights" aria-hidden="true">
-                <span class="traffic traffic--close"></span>
-                <span class="traffic traffic--min"></span>
-                <span class="traffic traffic--max"></span>
-            </div>
-            <div class="window__title">duynhat326@solef1t:$</div>
-            <div class="window__actions">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </header>
-        <div class="window__body">
-            <aside class="sidebar">
-                <div class="sidebar__header">
-                    <div class="prompt">
-                        <span class="prompt__user">duynhat326</span>@<span class="prompt__host">d33b4t0</span>
-                        <span class="prompt__path">~</span>$ neofetch
-                    </div>
-                    <pre class="ascii" aria-hidden="true">
-           .---.           
-         .'_:___".         
-         |__ --==|         
-         [  ]  :[|         
-         |__| I=[|         
-         / / ____|         
-        |-/.____.'         
-~~~~~~~`-'-~~~~~~~-~~~~~~~ 
-                    </pre>
-                </div>
-                <dl class="facts">
-                    <div>
-                        <dt>Alias</dt>
-                        <dd>duynhat326</dd>
-                    </div>
-                    <div>
-                        <dt>Focus</dt>
-                        <dd>Binary exploitation • WebSec</dd>
-                    </div>
-                    <div>
-                        <dt>From</dt>
-                        <dd>Hanoi, Vietnam</dd>
-                    </div>
-                    <div>
-                        <dt>Editor</dt>
-                        <dd>Neovim</dd>
-                    </div>
-                    <div>
-                        <dt>Hobbies</dt>
-                        <dd>CTF • Blog • Build labs</dd>
-                    </div>
-                </dl>
-                <nav class="sidebar__nav" aria-label="Điều hướng">
-                    <a href="#about" class="nav-link">~/about</a>
-                    <a href="#writeups" class="nav-link">~/writeups</a>
-                    <a href="#labs" class="nav-link">~/labs</a>
-                    <a href="#timeline" class="nav-link">~/timeline</a>
-                    <a href="#contact" class="nav-link">~/contact</a>
-                </nav>
-            </aside>
-            <main class="terminal" id="terminal" tabindex="-1">
-                <section id="about" class="section">
-                    <h1 class="prompt-line">
-                        <span class="prompt-line__prefix">[00:01]</span>
-                        <span class="prompt-line__user">duynhat326@d33b4t0</span>:<span class="prompt-line__path">~</span>$ whoami
-                    </h1>
-                    <p>
-                        Xin chào, mình là <strong>duynhat326</strong>, một CTF player yêu thích đào sâu binary exploitation, reversing và forensic.
-                    </p>
-                    <p>
-                        Mình thường xuyên tham gia các giải đấu Jeopardy và Attack/Defense, ghi chép lại hành trình qua blog, đồng thời xây dựng các lab mô phỏng thực tế để luyện tập cùng teammates.
-                    </p>
-                </section>
-                <section id="writeups" class="section">
-                    <h2 class="prompt-line">
-                        <span class="prompt-line__prefix">[00:07]</span>
-                        <span class="prompt-line__user">duynhat326@d33b4t0</span>:<span class="prompt-line__path">~/writeups</span>$ ls -la
-                    </h2>
-                    <ul class="listing">
-                        <li>
-                            <span class="listing__tag">-rw-r--r--</span>
-                            <div class="listing__meta">
-                                <a href="#" class="listing__title">n-day ROP Chain - SECCON CTF</a>
-                                <span class="listing__desc">Khai thác ret2dlresolve để chiếm shell trong GLIBC mới.</span>
-                            </div>
-                            <time class="listing__time">2024-05-18</time>
-                        </li>
-                        <li>
-                            <span class="listing__tag">-rw-r--r--</span>
-                            <div class="listing__meta">
-                                <a href="#" class="listing__title">Cache Quest - HackTheBox</a>
-                                <span class="listing__desc">Từ prototype pollution tới remote code execution trên Node.</span>
-                            </div>
-                            <time class="listing__time">2024-03-08</time>
-                        </li>
-                        <li>
-                            <span class="listing__tag">-rw-r--r--</span>
-                            <div class="listing__meta">
-                                <a href="#" class="listing__title">Telemetry Secrets - picoCTF</a>
-                                <span class="listing__desc">Phân tích traffic và dựng lại binary ẩn trong PCAP.</span>
-                            </div>
-                            <time class="listing__time">2023-12-20</time>
-                        </li>
-                    </ul>
-                    <a class="inline-link" href="#">cat more_writeups.md →</a>
-                </section>
-                <section id="labs" class="section">
-                    <h2 class="prompt-line">
-                        <span class="prompt-line__prefix">[00:12]</span>
-                        <span class="prompt-line__user">duynhat326@d33b4t0</span>:<span class="prompt-line__path">~/labs</span>$ tree -L 1
-                    </h2>
-                    <div class="lab-grid">
-                        <article class="lab">
-                            <header class="lab__header">pwn-lab</header>
-                            <p>VM sandbox cho ret2libc, heap feng shui và kernel primitives.</p>
-                            <span class="lab__status">status: online</span>
-                        </article>
-                        <article class="lab">
-                            <header class="lab__header">web-lab</header>
-                            <p>Include SSRF chains, race condition và bypass WAF thực chiến.</p>
-                            <span class="lab__status">status: staging</span>
-                        </article>
-                        <article class="lab">
-                            <header class="lab__header">re-lab</header>
-                            <p>Kho binary stripped, firmware dump và challenge reversing.</p>
-                            <span class="lab__status">status: booting</span>
-                        </article>
-                    </div>
-                </section>
-                <section id="timeline" class="section">
-                    <h2 class="prompt-line">
-                        <span class="prompt-line__prefix">[00:18]</span>
-                        <span class="prompt-line__user">duynhat326@d33b4t0</span>:<span class="prompt-line__path">~/history</span>$ tail -n 6 ./journey.log
-                    </h2>
-                    <ol class="timeline">
-                        <li>
-                            <span class="timeline__year">2024</span>
-                            <span class="timeline__event">Về nhì giải quốc gia, phụ trách mảng binary &amp; pwn.</span>
-                        </li>
-                        <li>
-                            <span class="timeline__year">2023</span>
-                            <span class="timeline__event">Top 10 Asian CTF League, phát triển tool fuzzing tự động.</span>
-                        </li>
-                        <li>
-                            <span class="timeline__year">2022</span>
-                            <span class="timeline__event">Khởi động blog ghi chép writeup và chiến thuật incident response.</span>
-                        </li>
-                        <li>
-                            <span class="timeline__year">2021</span>
-                            <span class="timeline__event">Gia nhập đội CTF đại học, chuyên sâu forensic &amp; reversing.</span>
-                        </li>
-                    </ol>
-                </section>
-                <section id="contact" class="section">
-                    <h2 class="prompt-line">
-                        <span class="prompt-line__prefix">[00:24]</span>
-                        <span class="prompt-line__user">duynhat326@solef1t</span>:<span class="prompt-line__path">~/contact</span>$ echo "ping"
-                    </h2>
-                    <p>Hãy gửi mail tới <a class="inline-link" href="mailto:ctf@duynhat326.dev">ctf@duynhat326.dev</a> để cùng viết challenge hoặc collab.</p>
-                    <p>Tìm mình trên <a class="inline-link" href="https://twitter.com" rel="noopener" target="_blank">Twitter</a>, <a class="inline-link" href="https://github.com" rel="noopener" target="_blank">GitHub</a> và <a class="inline-link" href="https://ctftime.org" rel="noopener" target="_blank">CTFtime</a>.</p>
-                    <p class="last-login">Last login: <span id="last-login">--</span> on tty0</p>
-                </section>
-            </main>
+    <a class="skip-to-content" href="#terminal">Bỏ qua nội dung</a>
+
+  <div class="background"></div>
+  <div class="window">
+    <header class="window__bar" role="presentation">
+      <div class="traffic-lights" aria-hidden="true">
+        <span class="traffic traffic--close"></span>
+        <span class="traffic traffic--min"></span>
+        <span class="traffic traffic--max"></span>
+      </div>
+      <div class="window__title">duynhat326@solef1t:$</div>
+      <div class="window__actions"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </header>
+
+    <div class="window__body">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <div class="prompt"><span class="prompt__user">duynhat326</span>@<span class="prompt__host">solef1t</span>:$ My Blog</div>
+          <div class="avatar-wrapper"><img src="assets/img/avatar.png" alt="Avatar sol3_f1t" class="avatar-img" loading="lazy" /></div>
         </div>
+
+        <dl class="facts">
+          <div><dt>CTF name</dt><dd>solef1t</dd></div>
+          <div><dt>Focus</dt><dd>Web exploitation • Cryptography</dd></div>
+          <div><dt>From</dt><dd>Ho Chi Minh City, Vietnam</dd></div>
+          <div><dt>Editor</dt><dd>Neovim</dd></div>
+          <div><dt>Hobbies</dt><dd>CTF • Blog • Build labs</dd></div>
+        </dl>
+
+        <nav class="sidebar__nav" aria-label="Điều hướng">
+            <a href="index.html" class="nav-link">~/home</a>
+            <a href="assets/html/about.html" class="nav-link">~/about</a>
+            <a href="assets/html/writeups.html" class="nav-link">~/writeups</a>
+            <a href="assets/html/labs.html"     class="nav-link">~/labs</a>
+            <a href="assets/html/rewards.html"  class="nav-link">~/rewards</a>
+            <a href="assets/html/contact.html"  class="nav-link">~/contact</a>
+        </nav>
+      </aside>
+
+        <main class="terminal" id="terminal" tabindex="-1">
+            <section class="section">
+                <h1 class="prompt-line">
+                    <span class="prompt-line__prefix">[00:01]</span>
+                    <span class="prompt-line__user">duynhat326@solef1t</span>:<span class="prompt-line__path">~</span>$ echo "welcome"
+                </h1>
+                    <h2 class="large">Walking on my way🧐.</h2>
+                <p>
+                    Hey there! I'm <strong>Nguyen Huu Duy Nhat</strong> — a second-year student at 
+                    <strong>Ho Chi Minh City University of Technology and Education (HCMUTE)</strong>.
+                </p>
+                <p>
+                    I’m passionate about <strong>Cybersecurity</strong>, focusing mainly on 
+                    <em>Web Exploitation</em> and <em>Cryptography</em>. 
+                    You’ll often find me diving into CTF challenges, exploring vulnerabilities, 
+                    and writing about what I learn along the way.
+                </p>
+                <p>
+                    This blog is where I share my <strong>CTF writeups</strong>, 
+                    <strong>research notes</strong>, and bits of my journey as a cybersecurity enthusiast.  
+                    Feel free to explore my labs, projects, and personal thoughts!
+                </p>
+            </section>
+        </main>
     </div>
-    <script src="assets/js/script.js"></script>
+</div>
+
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <small>© <span id="year-footer"></span> duynhat326 — All rights reserved.</small>
+      <a class="back-to-top" href="#terminal">↑ Lên đầu</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script>!function(){var y=document.getElementById("year-footer");if(y)y.textContent=(new Date).getFullYear()}();</script>
 </body>
 </html>
