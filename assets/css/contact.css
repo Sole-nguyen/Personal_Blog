@@ -1,0 +1,176 @@
+/* ================================================================
+   Sole_f1t Personal Blog — contact.css
+   Styles for contact.html
+   ================================================================ */
+
+/* Page heading */
+.contact-page-head {
+  text-align: center;
+  padding: 44px 0 36px;
+}
+.contact-page-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, #ffffff 30%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+.contact-page-sub {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.contact-head-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(250,168,26,0.4), transparent);
+}
+
+/* 3-card row */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 36px;
+  margin-bottom: 28px;
+}
+.contact-main-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 16px;
+  padding: 32px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  transition: all var(--transition);
+}
+.contact-main-card:hover {
+  border-color: rgba(250,168,26,0.5);
+  border-left-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+  background: rgba(250,168,26,0.04);
+}
+
+.cmc-icon {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: rgba(250,168,26,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: var(--accent);
+  margin-bottom: 4px;
+  transition: background var(--transition);
+}
+.contact-main-card:hover .cmc-icon { background: rgba(250,168,26,0.25); }
+
+.cmc-title {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--text);
+}
+.cmc-sub {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.cmc-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 9px 22px;
+  border-radius: 8px;
+  border: 1px solid rgba(250,168,26,0.45);
+  background: transparent;
+  color: var(--accent);
+  font-family: 'Cairo', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.cmc-btn:hover {
+  background: var(--accent);
+  color: #1a1a1a;
+  box-shadow: 0 4px 16px var(--accent-glow);
+}
+
+/* Social panel */
+.contact-social-panel {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 32px 32px;
+}
+.csp-title {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.csp-title i { font-size: 1.3rem; }
+.csp-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 28px;
+}
+.csp-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.csp-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: color var(--transition);
+}
+.csp-link:hover { color: var(--accent); }
+.csp-link-icon {
+  width: 56px; height: 56px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--text-muted);
+  transition: all var(--transition);
+}
+.csp-link:hover .csp-link-icon {
+  background: var(--accent-dim);
+  border-color: rgba(250,168,26,0.4);
+  color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 768px) {
+  .contact-cards { grid-template-columns: 1fr; }
+  .csp-grid { gap: 20px; }
+}
+@media (max-width: 480px) {
+  .contact-main-card { padding: 24px 18px 22px; }
+  .csp-link-icon { width: 48px; height: 48px; font-size: 1.4rem; }
+}

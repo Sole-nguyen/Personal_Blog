@@ -1,0 +1,118 @@
+/* ================================================================
+   Sole_f1t Personal Blog — about.css
+   Styles for about.html
+   ================================================================ */
+
+/* ── Profile hero section ── */
+.about-hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px 40px;
+  margin-bottom: 28px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.about-hero:hover {
+  border-color: rgba(250,168,26,0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+.about-avatar-wrap {
+  flex-shrink: 0;
+  width: 130px; height: 130px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent) 0%, #ff6b35 50%, #a855f7 100%);
+  padding: 3px;
+  box-shadow: 0 0 40px var(--accent-glow);
+}
+.about-avatar-wrap img {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--bg);
+}
+
+.about-hero-info { flex: 1; min-width: 0; }
+
+.about-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 5px;
+}
+
+.about-role {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.about-role i { font-size: 1rem; }
+
+.about-bio {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+.about-bio strong { color: var(--text); }
+
+.about-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.about-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-dim);
+  border: 1px solid rgba(250,168,26,0.25);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  transition: background var(--transition), border-color var(--transition);
+}
+.about-badge:hover {
+  background: rgba(250,168,26,0.2);
+  border-color: rgba(250,168,26,0.4);
+}
+.about-badge i { font-size: 0.9rem; }
+
+/* ── Highlights list ── */
+.highlights li {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  transition: border-color var(--transition), background var(--transition);
+}
+.highlights li:last-child { margin-bottom: 0; }
+.highlights li:hover { border-color: rgba(250,168,26,0.2); background: rgba(250,168,26,0.03); }
+.highlights li strong { color: var(--text); }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 22px;
+    gap: 20px;
+  }
+  .about-role { justify-content: center; }
+  .about-badges { justify-content: center; }
+}

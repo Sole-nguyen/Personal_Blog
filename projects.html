@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Sole_f1t</title>
+  <meta name="description" content="Projects by Sole_f1t" />
+  <link rel="icon" href="avatar.svg?v=2" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/projects.css" />
+</head>
+<body>
+
+  <div class="bg-animation" aria-hidden="true">
+    <div class="shape shape-red"></div>
+    <div class="shape shape-purple"></div>
+    <div class="shape shape-blue"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <nav class="sidebar closed" aria-label="Main navigation">
+    <header>
+      <div class="image-text">
+        <span class="image"><img src="assets/img/avatar.png" alt="Sole_f1t avatar" loading="lazy" /></span>
+        <div class="text logo-text">
+          <span class="name">Sole_f1t</span>
+          <span class="profession">CTF Player · Security</span>
+        </div>
+      </div>
+      <i class="bx bx-chevron-right toggle"></i>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+        <li class="search-box">
+          <i class="bx bx-search icon"></i>
+          <input type="text" placeholder="Search…" aria-label="Search" />
+        </li>
+        <ul class="menu-links">
+          <li><a href="index.html"><i class="bx bx-home icon"></i><span class="text">Home</span></a></li>
+          <li><a href="about.html"><i class="bx bx-user icon"></i><span class="text">About</span></a></li>
+          <li><a href="experience.html"><i class="bx bx-briefcase icon"></i><span class="text">Experience</span></a></li>
+          <li><a href="projects.html"><i class="bx bx-code-alt icon"></i><span class="text">Projects</span></a></li>
+          <li><a href="writeups.html"><i class="bx bx-edit-alt icon"></i><span class="text">Write-ups</span></a></li>
+          <li><a href="certificates.html"><i class="bx bx-certification icon"></i><span class="text">Certificates</span></a></li>
+          <li><a href="rewards.html"><i class="bx bx-trophy icon"></i><span class="text">Rewards</span></a></li>
+          <li><a href="contact.html"><i class="bx bx-envelope icon"></i><span class="text">Contact</span></a></li>
+          <li><a href="search.html"><i class="bx bx-search-alt icon"></i><span class="text">Search</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="index.html"><i class="bx bx-home"></i><span>Home</span></a></li>
+      <li><a href="about.html"><i class="bx bx-user"></i><span>About</span></a></li>
+      <li><a href="writeups.html"><i class="bx bx-edit-alt"></i><span>Write-ups</span></a></li>
+      <li><a href="rewards.html"><i class="bx bx-trophy"></i><span>Rewards</span></a></li>
+      <li><a href="search.html"><i class="bx bx-search-alt"></i><span>Search</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="l-main">
+    <div class="page-wrapper">
+
+      <div class="page-head">
+        <h1 class="page-head-title">Projects</h1>
+        <p class="page-head-sub">Things I've built — tools, scripts &amp; experiments</p>
+      </div>
+
+      <div class="content-card">
+        <div class="project-grid">
+
+          <div class="project-card">
+            <div class="project-icon"><i class="bx bx-bug"></i></div>
+            <div class="project-name">CTF Toolkit</div>
+            <div class="project-desc">Collection of Python scripts for automating common CTF tasks — hash cracking, encoding/decoding, web request helpers.</div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">CTF</span>
+              <span class="tag">Automation</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/duynhat326" class="project-link" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon"><i class="bx bx-shield-quarter"></i></div>
+            <div class="project-name">Web Security Lab</div>
+            <div class="project-desc">Docker-based vulnerable web applications for practising SSRF, XSS, SQL injection, JWT attacks and more.</div>
+            <div class="project-tags">
+              <span class="tag">Docker</span>
+              <span class="tag">Web Security</span>
+              <span class="tag">Lab</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/duynhat326" class="project-link" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon"><i class="bx bx-lock-open-alt"></i></div>
+            <div class="project-name">Crypto Solver</div>
+            <div class="project-desc">A Python tool for solving common CTF cryptography challenges — RSA weak key attacks, XOR brute-force, Base encodings.</div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Cryptography</span>
+              <span class="tag">CTF</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/duynhat326" class="project-link" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon"><i class="bx bx-notepad"></i></div>
+            <div class="project-name">Sole_f1t Blog</div>
+            <div class="project-desc">This personal blog — a static HTML/CSS/JS site documenting CTF writeups, security research, and personal projects.</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/duynhat326" class="project-link" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="bx bx-chevron-up"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

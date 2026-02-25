@@ -1,0 +1,70 @@
+/* ================================================================
+   Sole_f1t Personal Blog — rewards.css
+   Styles for rewards.html
+   ================================================================ */
+
+.timeline { display: grid; gap: 14px; }
+
+.tl-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color var(--transition);
+}
+.tl-item:hover { border-color: rgba(250,168,26,0.25); }
+
+.tl-left { min-width: 64px; text-align: center; }
+
+.tl-year {
+  display: inline-block;
+  background: var(--accent-dim);
+  border: 1px solid rgba(250,168,26,0.3);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.tl-right { flex: 1; min-width: 0; }
+
+.tl-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.tl-sub {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.exp-tl-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 6px;
+  padding-left: 4px;
+}
+.exp-tl-bullets li {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  line-height: 1.6;
+  padding-left: 14px;
+  position: relative;
+}
+.exp-tl-bullets li::before {
+  content: '❧';
+  position: absolute;
+  left: -4px;
+  color: var(--accent);
+  font-size: 0.75rem;
+  top: 2px;
+}

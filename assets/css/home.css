@@ -1,0 +1,156 @@
+/* ================================================================
+   Sole_f1t Personal Blog — home.css
+   Styles for index.html (home / landing page)
+   ================================================================ */
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 40px 40px 60px;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Avatar circle */
+.profile-circle-wrap {
+  flex-shrink: 0;
+  width: 220px; height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent) 0%, #ff6b35 50%, #a855f7 100%);
+  padding: 3px;
+  box-shadow: 0 0 60px var(--accent-glow);
+  animation: circleGlow 4s ease-in-out infinite;
+}
+@keyframes circleGlow {
+  0%,100% { box-shadow: 0 0 50px var(--accent-glow); }
+  50%      { box-shadow: 0 0 80px rgba(250,168,26,0.5); }
+}
+.profile-circle-wrap img {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--bg);
+}
+
+/* Profile info */
+.profile-info { flex: 1; min-width: 0; }
+
+.profile-name {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  background: linear-gradient(135deg, #ffffff 30%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(250,168,26,0.08);
+  border: 1px solid rgba(250,168,26,0.25);
+  border-radius: 8px;
+  padding: 6px 14px;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+.badge-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: badgePulse 2s ease-in-out infinite;
+}
+@keyframes badgePulse {
+  0%,100% { opacity:1; transform:scale(1); }
+  50%      { opacity:0.4; transform:scale(0.7); }
+}
+
+.profile-description {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+.profile-description strong { color: var(--text); }
+
+/* Animated typewriter headline */
+.animate {
+  margin-bottom: 22px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+.animate .prefix { color: var(--text-muted); }
+.skill-word { color: var(--accent); font-weight: 700; }
+.skill-cursor {
+  display: inline-block;
+  width: 2px; height: 1.1em;
+  background: var(--accent);
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  animation: cursorBlink 0.65s step-end infinite;
+}
+@keyframes cursorBlink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* Social links */
+.social-links { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.social-link {
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all var(--transition);
+}
+.social-link:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1a1a1a;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px var(--accent-glow);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .home { padding: 40px 24px 40px 30px; }
+  .profile-container { gap: 36px; }
+}
+@media (max-width: 768px) {
+  .home {
+    padding: 28px 16px 90px;
+    align-items: flex-start;
+    padding-top: 32px;
+  }
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  .profile-circle-wrap { width: 160px; height: 160px; }
+  .profile-description { max-width: 100%; }
+  .social-links { justify-content: center; }
+  .availability-badge { margin: 0 auto 16px; }
+  .animate { text-align: center; }
+}
+@media (max-width: 480px) {
+  .profile-name { font-size: 1.8rem; }
+}

@@ -1,0 +1,77 @@
+/* ================================================================
+   Sole_f1t Personal Blog — search.css
+   Styles for search.html
+   ================================================================ */
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 20px;
+  margin-bottom: 28px;
+  transition: border-color var(--transition), background var(--transition);
+}
+.search-input-wrap:focus-within {
+  border-color: rgba(250,168,26,0.5);
+  background: rgba(250,168,26,0.04);
+}
+.search-input-wrap i { font-size: 1.3rem; color: var(--text-muted); flex-shrink: 0; }
+.search-input-wrap:focus-within i { color: var(--accent); }
+
+#searchInput {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-family: 'Cairo', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+}
+#searchInput::placeholder { color: var(--text-muted); }
+
+.search-results { display: grid; gap: 12px; }
+
+.search-result-item {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 16px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: all var(--transition);
+}
+.search-result-item:hover { border-color: rgba(250,168,26,0.3); transform: translateX(4px); }
+
+.result-icon {
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  background: var(--accent-dim);
+  border: 1px solid rgba(250,168,26,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.result-text .result-title { font-size: 0.95rem; font-weight: 800; color: var(--text); margin-bottom: 3px; }
+.result-text .result-desc  { font-size: 0.82rem; color: var(--text-muted); font-weight: 600; }
+
+.result-category {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.no-results { text-align: center; color: var(--text-muted); font-size: 0.95rem; padding: 40px; }

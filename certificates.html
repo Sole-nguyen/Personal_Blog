@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificates — Sole_f1t</title>
+  <meta name="description" content="Certificates and courses completed by Sole_f1t" />
+  <link rel="icon" href="avatar.svg?v=2" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/certificates.css" />
+</head>
+<body>
+
+  <div class="bg-animation" aria-hidden="true">
+    <div class="shape shape-red"></div>
+    <div class="shape shape-purple"></div>
+    <div class="shape shape-blue"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <nav class="sidebar closed" aria-label="Main navigation">
+    <header>
+      <div class="image-text">
+        <span class="image"><img src="assets/img/avatar.png" alt="Sole_f1t avatar" loading="lazy" /></span>
+        <div class="text logo-text">
+          <span class="name">Sole_f1t</span>
+          <span class="profession">CTF Player · Security</span>
+        </div>
+      </div>
+      <i class="bx bx-chevron-right toggle"></i>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+        <li class="search-box">
+          <i class="bx bx-search icon"></i>
+          <input type="text" placeholder="Search…" aria-label="Search" />
+        </li>
+        <ul class="menu-links">
+          <li><a href="index.html"><i class="bx bx-home icon"></i><span class="text">Home</span></a></li>
+          <li><a href="about.html"><i class="bx bx-user icon"></i><span class="text">About</span></a></li>
+          <li><a href="experience.html"><i class="bx bx-briefcase icon"></i><span class="text">Experience</span></a></li>
+          <li><a href="projects.html"><i class="bx bx-code-alt icon"></i><span class="text">Projects</span></a></li>
+          <li><a href="writeups.html"><i class="bx bx-edit-alt icon"></i><span class="text">Write-ups</span></a></li>
+          <li><a href="certificates.html"><i class="bx bx-certification icon"></i><span class="text">Certificates</span></a></li>
+          <li><a href="rewards.html"><i class="bx bx-trophy icon"></i><span class="text">Rewards</span></a></li>
+          <li><a href="contact.html"><i class="bx bx-envelope icon"></i><span class="text">Contact</span></a></li>
+          <li><a href="search.html"><i class="bx bx-search-alt icon"></i><span class="text">Search</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="index.html"><i class="bx bx-home"></i><span>Home</span></a></li>
+      <li><a href="about.html"><i class="bx bx-user"></i><span>About</span></a></li>
+      <li><a href="writeups.html"><i class="bx bx-edit-alt"></i><span>Write-ups</span></a></li>
+      <li><a href="rewards.html"><i class="bx bx-trophy"></i><span>Rewards</span></a></li>
+      <li><a href="search.html"><i class="bx bx-search-alt"></i><span>Search</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="l-main">
+    <div class="page-wrapper">
+
+      <!-- Page heading -->
+      <div class="cert-page-head">
+        <h1 class="cert-page-title">Certifications</h1>
+        <p class="cert-page-sub">Professional qualifications and completed courses</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="cert-filter-bar">
+        <button class="cert-filter-btn active" data-filter="all">All Certificates</button>
+        <button class="cert-filter-btn" data-filter="mos">MOS</button>
+        <button class="cert-filter-btn" data-filter="security">Security</button>
+        <button class="cert-filter-btn" data-filter="code">Code</button>
+        <button class="cert-filter-btn" data-filter="english">English</button>
+      </div>
+
+      <!-- Certificate gallery -->
+      <div class="cert-gallery" id="certGallery">
+
+        <!-- ══ MOS ══ -->
+        <div class="cert-gallery-card" data-category="mos">
+          <div class="cert-preview">
+            <img src="assets/certs/Word 2019 Associate.png" alt="MOS Word 2019" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <div class="cert-body-name">MOS Word 2019</div>
+            <div class="cert-body-row"><i class="bx bxl-microsoft" style="color:#00a4ef;font-size:1.15rem;"></i> Microsoft</div>
+            <div class="cert-body-row"><i class="bx bx-calendar"></i> 2023</div>
+            <div class="cert-body-desc">Microsoft Office Specialist — Word 2019 certification.</div>
+            <div class="cert-body-tags">
+              <span class="cert-tag">Word</span>
+              <span class="cert-tag">Office 365</span>
+              <span class="cert-tag">Microsoft</span>
+              <span class="cert-tag">MOS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-gallery-card" data-category="mos">
+          <div class="cert-preview">
+            <img src="assets/certs/PowerPoint.png" alt="MOS PowerPoint 2019" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <div class="cert-body-name">MOS PowerPoint 2019</div>
+            <div class="cert-body-row"><i class="bx bxl-microsoft" style="color:#00a4ef;font-size:1.15rem;"></i> Microsoft</div>
+            <div class="cert-body-row"><i class="bx bx-calendar"></i> 2022</div>
+            <div class="cert-body-desc">Microsoft Office Specialist — PowerPoint 2016 certification.</div>
+            <div class="cert-body-tags">
+              <span class="cert-tag">PowerPoint</span>
+              <span class="cert-tag">Presentation</span>
+              <span class="cert-tag">Microsoft</span>
+              <span class="cert-tag">MOS</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="cert-gallery-card" data-category="mos">
+          <div class="cert-preview">
+            <img src="assets/certs/Excel.png" alt="MOS Excel 2019" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <div class="cert-body-name">MOS Excel 2019</div>
+            <div class="cert-body-row"><i class="bx bxl-microsoft" style="color:#00a4ef;font-size:1.15rem;"></i> Microsoft</div>
+            <div class="cert-body-row"><i class="bx bx-calendar"></i> 2025</div>
+            <div class="cert-body-desc">Microsoft Office Specialist — Excel 2019 certification.</div>
+            <div class="cert-body-tags">
+              <span class="cert-tag">Excel</span>
+              <span class="cert-tag">Spreadsheet</span>
+              <span class="cert-tag">Microsoft</span>
+              <span class="cert-tag">MOS</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ══ Security ══ -->
+         <div class="cert-gallery-card" data-category="security">
+          <div class="cert-preview">
+            <img src="assets/certs/CTIGA.png" alt="Certified Threat Intelligence & Governance Analyst (CTIGA)" loading="lazy" />
+            <div class="cert-overlay">
+              <a href="https://courses.redteamleaders.com/exam-completion/44411c89ac1132e4" class="cert-view-btn" target="_blank" rel="noopener">
+                <i class="bx bx-link-external"></i> View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-body-name">Certified Threat Intelligence &amp; Governance Analyst (CTIGA)</div>
+            <div class="cert-body-row"><img src="assets/img/red_team_leaders_logo.jpg" alt="Red Team Leaders" class="cert-logo" /> RED TEAM LEADERS</div>
+            <div class="cert-body-row"><i class="bx bx-calendar"></i> 2026</div>
+            <div class="cert-body-desc">Certification in threat intelligence and governance.</div>
+            <div class="cert-body-tags">
+              <span class="cert-tag">Threat Intelligence</span>
+              <span class="cert-tag">Governance</span>
+              <span class="cert-tag">OSINT</span>
+              <span class="cert-tag">Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══ Google ══ -->
+        <div class="cert-gallery-card" data-category="google">
+          <div class="cert-preview">
+            <img src="assets/certs/Google Gemini cert.png" alt="Gemini Cert" loading="lazy" />
+            <div class="cert-overlay">
+              <a href="https://edu.google.accredible.com/f6db7dae-3395-49ba-9bd3-53845108fde4#acc.t2PleMEj" class="cert-view-btn" target="_blank" rel="noopener">
+                <i class="bx bx-link-external"></i> View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-body-name">
+              Google Gemini Certification   
+            </div>
+            <div class="cert-body-row"><img src="assets/img/Google.png" alt="Google" class="cert-logo" /> Google</div>
+            <div class="cert-body-row"><i class="bx bx-calendar"></i> 2026</div>
+            <div class="cert-body-desc">Certification in Google's Gemini AI platform.</div>
+            <div class="cert-body-tags">
+              <span class="cert-tag">Gemini AI</span>
+              <span class="cert-tag">Generative AI</span>
+              <span class="cert-tag">Google</span>
+              <span class="cert-tag">AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══ English ══ -->
+        <div class="cert-gallery-card" data-category="english">
+          <div class="cert-preview">
+            <img src="assets/img/certs/eng-placeholder.png" alt="International English Language Testing System (IELTS)" loading="lazy" />
+            <div class="cert-overlay">
+              <a href="https://www.britishcouncil.org/ielts" class="cert-view-btn" target="_blank" rel="noopener">
+                <i class="bx bx-link-external"></i> View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-body-name">International English Language Testing System (IELTS)</div>
+            <div class="cert-body-row"><img src="assets/img/idp.png" alt="IDP" class="cert-logo" /> IDP Education</div>
+            <div class="cert-body-row"><i class="bx bx-calendar"></i> 2024</div>
+            <div class="cert-body-desc">English language proficiency certification.</div>
+            <div class="cert-body-tags">
+              <span class="cert-tag">IELTS</span>
+              <span class="cert-tag">English</span>
+              <span class="cert-tag">Listening</span>
+              <span class="cert-tag">Writing</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /cert-gallery -->
+
+    </div>
+  </div>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="bx bx-chevron-up"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    // ── Certificate filter ──
+    const filterBtns = document.querySelectorAll('.cert-filter-btn');
+    const certCards  = document.querySelectorAll('.cert-gallery-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        certCards.forEach(card => {
+          const match = f === 'all' || card.dataset.category === f;
+          card.style.display = match ? '' : 'none';
+          card.style.animation = match ? 'certFadeIn 0.35s ease forwards' : '';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sole_f1t — CTF &amp; Security Blog</title>
-  <meta name="description" content="Personal blog of Sole_f1t — CTF writeups, security research, labs and more." />
-  <meta property="og:title" content="Sole_f1t — CTF &amp; Security Blog" />
-  <meta property="og:description" content="CTF · Writeups · Labs · Rewards · Contact" />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#FAA81A" />
+  <title>Write-ups — Sole_f1t</title>
+  <meta name="description" content="CTF write-ups by Sole_f1t" />
   <link rel="icon" href="avatar.svg?v=2" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/home.css" />
+  <link rel="stylesheet" href="assets/css/writeups.css" />
 </head>
 <body>
 
@@ -30,9 +25,7 @@
   <nav class="sidebar closed" aria-label="Main navigation">
     <header>
       <div class="image-text">
-        <span class="image">
-          <img src="assets/img/avatar.png" alt="Sole_f1t avatar" loading="lazy" />
-        </span>
+        <span class="image"><img src="assets/img/avatar.png" alt="Sole_f1t avatar" loading="lazy" /></span>
         <div class="text logo-text">
           <span class="name">Sole_f1t</span>
           <span class="profession">CTF Player · Security</span>
@@ -72,43 +65,50 @@
   </nav>
 
   <div class="l-main">
-    <section class="home">
-      <div class="profile-container">
+    <div class="page-wrapper">
 
-        <div class="profile-circle-wrap">
-          <img src="assets/img/avatar.png" alt="Sole_f1t — Nguyen Huu Duy Nhat" loading="lazy" />
-        </div>
-
-        <div class="profile-info">
-          <h1 class="profile-name">Sole_f1t</h1>
-
-          <div class="availability-badge">
-            <span class="badge-dot"></span>
-            Available for CTF &amp; Collaboration
-          </div>
-
-          <p class="profile-description">
-            Hey! I'm <strong>Nguyen Huu Duy Nhat</strong> — a second-year student at
-            <strong>HCMUTE</strong> majoring in Information Security.
-            CTF player focusing on <strong>Web Exploitation</strong> &amp; <strong>Cryptography</strong>,
-            member of Sharkbait CTF Team, and leader of Ph0_V@nG_nH0_Hon3y.
-            Building labs, writing writeups, and exploring the security world one challenge at a time.
-          </p>
-
-          <div class="animate">
-            <span class="prefix">this.skills.includes("<span id="skill-word" class="skill-word"></span>")</span>
-          </div>
-
-          <div class="social-links">
-            <a href="https://github.com/duynhat326"      class="social-link" title="GitHub"   target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/solenguyen/" class="social-link" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://discord.com/users/sole.030206" class="social-link" title="Discord" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
-            <a href="https://facebook.com/@duynhat326"    class="social-link" title="Facebook"  target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-          </div>
-        </div>
-
+      <div class="page-head">
+        <h1 class="page-head-title">CTF Write-ups</h1>
+        <p class="page-head-sub">Detailed solutions and techniques from competitions</p>
       </div>
-    </section>
+
+      <div class="content-card">
+        <div class="listing">
+
+          <div class="listing-item">
+            <span class="listing-tag">WEB</span>
+            <div class="listing-meta">
+              <span class="listing-title">[ Add your writeup title here ]</span>
+              <span class="listing-desc">Short description of the challenge and approach used.</span>
+            </div>
+            <span class="listing-date">YYYY-MM-DD</span>
+          </div>
+
+          <div class="listing-item">
+            <span class="listing-tag">CRYPTO</span>
+            <div class="listing-meta">
+              <span class="listing-title">[ Add your writeup title here ]</span>
+              <span class="listing-desc">Short description of the challenge and approach used.</span>
+            </div>
+            <span class="listing-date">YYYY-MM-DD</span>
+          </div>
+
+          <div class="listing-item">
+            <span class="listing-tag">PWN</span>
+            <div class="listing-meta">
+              <span class="listing-title">[ Add your writeup title here ]</span>
+              <span class="listing-desc">Short description of the challenge and approach used.</span>
+            </div>
+            <span class="listing-date">YYYY-MM-DD</span>
+          </div>
+
+        </div>
+        <p style="margin-top:16px;font-size:.83rem;color:var(--text-muted);font-style:italic;">
+          ✏️ Replace the placeholder entries above with your actual CTF write-ups.
+        </p>
+      </div>
+
+    </div>
   </div>
 
   <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">

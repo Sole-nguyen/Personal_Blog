@@ -1,0 +1,82 @@
+/* ================================================================
+   Sole_f1t Personal Blog — projects.css
+   Styles for projects.html
+   ================================================================ */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all var(--transition);
+}
+.project-card:hover {
+  border-color: rgba(250,168,26,0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.project-icon {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  background: var(--accent-dim);
+  border: 1px solid rgba(250,168,26,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.project-name {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.project-desc {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  flex: 1;
+  font-weight: 600;
+}
+
+.project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background: rgba(250,168,26,0.1);
+  border: 1px solid rgba(250,168,26,0.2);
+  color: var(--accent);
+}
+
+.project-links { display: flex; gap: 8px; margin-top: 4px; }
+
+.project-link {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color var(--transition);
+}
+.project-link:hover { color: var(--accent); }
+.project-link i { font-size: 1rem; }
+
+@media (max-width: 480px) {
+  .project-grid { grid-template-columns: 1fr; }
+}
